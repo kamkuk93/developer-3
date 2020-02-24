@@ -6,7 +6,8 @@ const sgMail = require('@sendgrid/mail'); //sendgrid library to send emails
 const app = express(); //alias from the express function
 
 //sendgrid api key
-sgMail.setApiKey('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');
+// sgMail.setApiKey('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');
+sgMail.setApiKey('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');
 
 // app.use(cors()); //utilize Cors so the browser doesn't restrict data, without it Sendgrid will not send!
 
@@ -17,7 +18,7 @@ sgMail.setApiKey('SG.ZhHeIvzJTBqkLTq_dZs-ZA.IjZQQRHGjdU1vFUQaHRH3Kwr2Ar8B3ezAN57
 //     res.send("Welcome to the Sendgrid Emailing Server");
 // });
 
-app.get('/send-email', (req, res, next) => {
+app.get('/send-email', (req, res) => {
 
     // res.json({ msg: 'This is CORS-enabled for all origins!' })
 

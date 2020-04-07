@@ -1,19 +1,13 @@
 import React from 'react';
 import axios from 'axios'
-
 import styles from './blog_view.module.scss';
 import SinglePost from '../../components/single_post/single_post'
-
-// import { Posts } from '../../data/posts';
-
-
-
+import { Link } from 'react-router-dom'
 
 
 class BlogView extends React.Component {
     state = {
         posts: [],
-
     }
 
     componentDidMount() {
@@ -32,11 +26,16 @@ class BlogView extends React.Component {
 
         return (
             <div className={styles.wrapper}>
-                <div >
-                    <p className={styles.title}>Blog</p>
+
+                <div className={styles.box_1}>
+
+                    <p className={styles.subtitle}>Blog</p>
+                    <Link to="/" >
+                        <div className={styles.close}></div>
+                    </Link>
                 </div>
 
-                <div>
+                <div className={styles.posts}>
                     {posts.map(item => (
                         <SinglePost key={item.content.rendered} {...item} />
                     ))}

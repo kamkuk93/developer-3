@@ -1,16 +1,416 @@
 .wrapper{
-
-    width: 100%;
-    height: 640px;
-    background-color: rgb(0, 81, 255);
+   position: relative;
+   height: 960px;
+   width: 100%;
+   background-color: #0E1626;
+   margin-top: 0px;
+   padding: 10px 25px;
+   border-radius: 30px 30px 0 0;
  }
 
- .title {
+ .title{
+   display: block;
+   margin: 10px 0 0 0;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 700;
+   font-size: 31px;
+   color: #F3F3F3;
+   width: 200px;
+   // background-color: red;
+ }
 
+ .content{
+   position: relative;
+   margin-top: 20px;
+ }
+
+ .subtitle{
+  display: block;
+  margin: 10px 0 0 25PX;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #F3F3F3;
+  width: 260px;
+ }
+
+ .input_email, .input_message{
+   margin: 0 0 15px 0;
+   padding: 0 0 0 25px;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400;
+   font-size: 17px;
+   height: 56px;
+   width: 310px;
+   border-radius: 28px;
+   border: none;
+   outline: none;
+   text-decoration: none;
+   background-color: #F3F3F3;
+ }
+
+ .input_text{
+   margin: 0 0 40px 0;
+   padding: 15px 25px 0 25px;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400;
+   font-size: 17px;
+   height: 168px;
+   width: 310px;
+   border-radius: 28px;
+   outline: none;
+   resize: none;
+   border: none;
+   background-color: #F3F3F3;
+  }
+
+  .button {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 13pt;
+    text-decoration: none;
+    padding: 7px 12px;
+    background: none;
+    border: 2px solid #F2490C;
+    border-radius: 27px;
+    height: 54px;
+    width: 200px;
+    top: 470px;
+    right: 0px;
+    cursor: pointer;
+    outline:none;
+    color: #F3F3F3;
+    
+ }
+
+ .social_media_box{
+  position: absolute;
+  top: 660px;
+  left: 0px;
+  // border-left: 2px solid #F3F3F3;
+
+  width: 340px;
+  height: 260px;
+  // background-color: blue;
+}
+
+.social_media_facebook, .social_media_instagram{
+  position: relative;
+  display: block;
+  margin: 50px 0 0 110px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 41px;
+  color: #F3F3F3;
+  width: 200px;
+  // border: 2px solid red;
+}
+
+.social_media_facebook::before{
+  content: url("./../../assets/img/facebook_icon_2.png");
+  position: absolute;
+    width: auto;
+  height: auto;
+  top: 0px;
+  left: -80px;
+}
+
+.social_media_instagram::before{
+  content: url("./../../assets/img/instagram_icon_2.png");
+  position: absolute;
+    width: auto;
+  height: auto;
+  top: 0px;
+  left: -80px;
+}
+
+.link{
+  
+  text-decoration: none;
+
+  background: none;
+ 
+  cursor: pointer;
+  outline:none;
+}
+
+
+ @media (min-width: 1360px) {
+
+  .wrapper{
     position: relative;
+    height: 800px;
+    width: 100%;
+    background-color: #0E1626;
+
+    padding: 30px 102px;
+    // background-color: blue;
+  }
+
+  .title{
+    display: block;
+    margin: 10px 0 0 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
     font-size: 41px;
-    top: 20px;
-    left: 20px;
+    color: #F3F3F3;
+    width: 200px;
+    // background-color: red;
+  }
+
+  .content{
+    position: relative;
+    margin-top: 40px;
+    width: 600px;
+    // background-color: red;
+  }
+
+  .subtitle{
+    display: block;
+    margin: 10px 0 0 25PX;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #F3F3F3;
+    width: 260px;
+   }
+
+   .input_email, .input_message{
+    margin: 0 0 15px 0;
+    padding: 0 0 0 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    height: 56px;
+    width: 600px;
+    border-radius: 28px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background-color: #F3F3F3;
+  }
+ 
+  .input_text{
+    margin: 0 0 40px 0;
+    padding: 15px 25px 0 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    height: 168px;
+    width: 600px;
+    border-radius: 28px;
+    outline: none;
+    resize: none;
+    border: none;
+    background-color: #F3F3F3;
+   }
+ 
+   .button {
+     position: absolute;
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 700;
+     font-size: 13pt;
+     text-decoration: none;
+     padding: 7px 12px;
+     background: none;
+ 
+     border-radius: 27px;
+     height: 54px;
+     width: 200px;
+     top: 490px;
+     right: 0px;
+     cursor: pointer;
+     outline:none;
+     color: #F3F3F3;
+  }
+
+  .social_media_box{
+    position: absolute;
+    top: 400px;
+    left: 860px;
+    // border-left: 2px solid #F3F3F3;
+
+    width: 400px;
+    height: 200px;
+    // background-color: red;
+  }
+
+  .social_media_facebook, .social_media_instagram{
+    position: relative;
+    display: block;
+    margin: 26px 0 0 110px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 41px;
+    color: #F3F3F3;
+    width: 200px;
+    // border: 2px solid red;
+  }
+
+  .social_media_facebook::before{
+    content: url("./../../assets/img/facebook_icon_2.png");
+    position: absolute;
+      width: auto;
+    height: auto;
+    top: 0px;
+    left: -80px;
+  }
+
+  .social_media_instagram::before{
+    content: url("./../../assets/img/instagram_icon_2.png");
+    position: absolute;
+      width: auto;
+    height: auto;
+    top: 0px;
+    left: -80px;
+  }
+
+
+
+
+  // .illustration_message{
+  //   position: absolute;
+  //   background-image: url("../../assets/img/Illustration_message.svg");
+  //   background-repeat: no-repeat;
+  //   background-size: 400px auto;
+    
+  //   top: 200px;
+  //   left: 800px;
+  //   width: 400px;
+  //   height: 340px;
+  //   // background-color: red;
+  // }
+
  }
+
+ @media (min-width: 1920px) {
+
+  .wrapper{
+    position: relative;
+    height: 1080px;
+    width: 100%;
+    background-color: #0E1626;
+
+    padding: 90px 200px;
+    // background-color: blue;
+  }
+
+  .title{
+    display: block;
+    margin: 0px 0 0 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 41px;
+    color: #F3F3F3;
+    width: 200px;
+    // background-color: red;
+  }
+
+  .content{
+    position: relative;
+    margin-top: 60px;
+    width: 800px;
+    // background-color: red;
+  }
+
+  .subtitle{
+    display: block;
+    margin: 40px 0 0 25PX;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #F3F3F3;
+    width: 260px;
+   }
+
+   .input_email, .input_message{
+    margin: 0 0 15px 0;
+    padding: 0 0 0 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    height: 56px;
+    width: 800px;
+    border-radius: 28px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background-color: #F3F3F3;
+  }
+ 
+  .input_text{
+    margin: 0 0 40px 0;
+    padding: 15px 25px 0 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    height: 168px;
+    width: 800px;
+    border-radius: 28px;
+    outline: none;
+    resize: none;
+    border: none;
+    background-color: #F3F3F3;
+   }
+
+   .button {
+    top: 580px;
+    right: 0px;
+ }
+ 
+   .social_media_box{
+    position: absolute;
+    top: 526px;
+    left: 1260px;
+    // border-left: 2px solid #F3F3F3;
+
+    width: 400px;
+    height: 200px;
+    // background-color: red;
+  }
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .wrapper{
+
+//     width: 100%;
+//     height: 640px;
+//     background-color: rgb(0, 81, 255);
+//  }
+
+//  .title {
+
+//     position: relative;
+//     display: inline-block;
+//     font-size: 41px;
+//     top: 20px;
+//     left: 20px;
+//  }
+
+//  .content{
+//     display: block;
+//     margin-left: 20px;
+//  }
     
  

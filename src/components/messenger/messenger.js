@@ -30,7 +30,7 @@ class Messenger extends React.Component {
                 {/* kod do Messengera */}
                 <div>
                     <MessengerCustomerChat
-                        pageId="<740035376104850>"
+                        pageId="<101000278242439>"
                         appId="<1105809939751290>"
                     />
 

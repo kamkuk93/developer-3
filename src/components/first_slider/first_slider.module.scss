@@ -1,0 +1,167 @@
+.wrapper{
+    margin-top: 35px;
+    width: 100%;
+    height: 370px;
+    // background-color: pink;
+}
+
+.skier{
+
+    background-image: url("./../../assets/img/obraz_mobile_01.png");
+    background-repeat: no-repeat;
+    width: auto;
+    height: 370px;
+    cursor: grabbing;
+    outline:none;
+
+}
+
+.sea{
+
+    background-image: url("./../../assets/img/obraz_mobile_02.png");
+    background-repeat: no-repeat;
+    width: auto;
+    height: 370px;
+    cursor: grabbing;
+    outline:none;
+
+}
+
+
+.concert{
+
+    background-image: url("./../../assets/img/obraz_mobile_03.png");
+    background-repeat: no-repeat;
+    width: auto;
+    height: 370px;
+    cursor: grabbing;
+    outline:none;
+
+}
+
+.city{
+
+    background-image: url("./../../assets/img/obraz_mobile_04.png");
+    background-repeat: no-repeat;
+    width: auto;
+    height: 370px;
+    cursor: grabbing;
+    outline:none;
+
+}
+
+
+
+@media (min-width: 1360px) {
+    .wrapper{
+        margin-top: 40px;
+        width: 100%;
+        height: 510px;
+        // background-color: blue;
+    }
+    
+    .skier{
+    
+        background-image: url("./../../assets/img/obraz_1360px_01.png");
+        background-repeat: no-repeat;
+         width: auto;
+        height: 510px;
+        cursor: grabbing;
+        outline:none;
+        margin-left: 130px;
+        
+       }
+
+       .sea{
+    
+        background-image: url("./../../assets/img/obraz_1360px_02.png");
+        background-repeat: no-repeat;
+         width: auto;
+        height: 510px;
+        cursor: grabbing;
+        outline:none;
+        margin-left: 130px;
+        
+       }
+
+       .concert{
+    
+        background-image: url("./../../assets/img/obraz_1360px_03.png");
+        background-repeat: no-repeat;
+         width: auto;
+        height: 510px;
+        cursor: grabbing;
+        outline:none;
+        margin-left: 130px;
+        
+       }
+
+       .city{
+    
+        background-image: url("./../../assets/img/obraz_1360px_04.png");
+        background-repeat: no-repeat;
+         width: auto;
+        height: 510px;
+        cursor: grabbing;
+        outline:none;
+        margin-left: 130px;
+        
+       }
+    
+
+}
+
+
+@media (min-width: 1920px) {
+    .wrapper{
+        // display: inline;
+        margin-top: 40px;
+        width: 100%;
+        height: 680px;
+        // background-color: blue;
+    }
+    
+    .skier{
+    
+        background-image: url("./../../assets/img/obraz_1920px_01.png");
+        background-repeat: no-repeat;
+         width: auto;
+        height: 680px;
+        cursor: grabbing;
+        outline:none;
+        margin-left: 170px;
+    }
+
+    .sea{
+    
+        background-image: url("./../../assets/img/obraz_1920px_02.png");
+        background-repeat: no-repeat;
+         width: auto;
+        height: 680px;
+        cursor: grabbing;
+        outline:none;
+        margin-left: 170px;
+    }
+
+    .concert{
+    
+        background-image: url("./../../assets/img/obraz_1920px_03.png");
+        background-repeat: no-repeat;
+         width: auto;
+        height: 680px;
+        cursor: grabbing;
+        outline:none;
+        margin-left: 170px;
+    }
+
+    .city{
+    
+        background-image: url("./../../assets/img/obraz_1920px_04.png");
+        background-repeat: no-repeat;
+         width: auto;
+        height: 680px;
+        cursor: grabbing;
+        outline:none;
+        margin-left: 170px;
+    }
+}

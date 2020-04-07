@@ -3,7 +3,28 @@ import axios from 'axios';
 
 import styles from './single_post.module.scss';
 
+import styled, { keyframes } from "styled-components"
 
+const MainImage = styled.div`
+
+    background-image: url(${props => props.src});
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: inline-block;
+    width: 310px;
+    height: 200px;
+    border-radius: 30px;
+    background-color: blue;
+
+
+    @media (min-width: 1360px) {
+        width: 100%;
+    height: 553px;
+
+
+}
+
+`
 
 
 class Post extends React.Component {
@@ -34,17 +55,20 @@ class Post extends React.Component {
                 <div className={styles.wrapper}>
 
 
-                    {/* <div className={styles.profilImage}>
-                        <img src={this.props.image} alt="profil" className={styles.profilPhoto} />
-                    </div> */}
 
-                    <img className={styles.img} src={imgUrl} alt="view" />
 
-                    <div className={styles.name}>
+                    {/* <img className={styles.img} src={imgUrl} alt="view" /> */}
+
+                    <MainImage src={imgUrl}>
+
+
+                    </MainImage>
+
+
+                    <div className={styles.title}>
                         <p className={styles.nameSurname}>{this.props.title.rendered}</p>
                     </div>
-                    <div className={styles.line}>
-                        {/* <p className={styles.field}>{this.props.content.rendered}</p> */}
+                    <div className={styles.paragraph}>
 
                         <div dangerouslySetInnerHTML={{ __html: this.props.content.rendered }} />
 

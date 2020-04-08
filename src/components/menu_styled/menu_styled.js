@@ -1,5 +1,6 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
+import styles from './menu_styled.module.scss';
 import { TweenMax, Power3, TimelineMax } from "gsap/all"
 import { Link } from "react-scroll";
 import { Link as LinkReact } from 'react-router-dom'
@@ -69,7 +70,7 @@ const MenuLinks = styled.div`
 const LinkWrapper = styled.div`
   grid-column: 1 / 13;
   grid-row: 2 / 13;
-  /* background-color: pink; */
+  text-decoration: none;
 `
 
 const LinkMenu = styled.h1`
@@ -85,6 +86,7 @@ const LinkMenu = styled.h1`
   margin-left: 0px;
   cursor: pointer;
   color: white;
+ 
 
   /* background-color: red; */
 
@@ -227,7 +229,7 @@ class Menu extends React.Component {
                             <LinkMenu onClick={this.allFunctions}>Kontakt</LinkMenu>
                         </Link>
 
-                        <LinkReact to="/blog">
+                        <LinkReact to="/blog" className={styles.link}>
                             <LinkMenu >Blog</LinkMenu>
                         </LinkReact>
                     </LinkWrapper>

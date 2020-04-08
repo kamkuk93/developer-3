@@ -21,11 +21,11 @@ const MainBackground = () => (
 
         <div className={styles.email_box}>
             <p className={styles.email_title}> E-MAIL</p>
-            <p className={styles.email_text}> experience-developer1@gmail.com</p>
+            <p className={styles.email_text}> experiencedeveloper1@gmail.com</p>
         </div>
 
         <div className={styles.blog_box}>
-            <Link to="/blog" >
+            <Link to="/blog" className={styles.link}>
                 <p className={styles.blog_title}> BLOG</p>
                 <p className={styles.blog_text}> Zobacz wpisy</p>
             </Link>

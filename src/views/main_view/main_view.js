@@ -33,7 +33,7 @@ const mainView = () => (
             <FifhSection />
             <FifhSectionUnder />
 
-            {/* <ContactSection /> */}
+            <ContactSection />
             <SeventhSection />
             {/* <Messenger /> */}
 

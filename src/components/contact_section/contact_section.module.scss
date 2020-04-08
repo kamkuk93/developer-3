@@ -1,6 +1,6 @@
 .wrapper{
    position: relative;
-   height: 960px;
+   height: 700px;
    width: 100%;
    background-color: #0E1626;
    margin-top: 0px;
@@ -16,83 +16,78 @@
    font-size: 31px;
    color: #F3F3F3;
    width: 200px;
-   // background-color: red;
  }
 
- .content{
-   position: relative;
-   margin-top: 20px;
- }
+//  .content{
+//    position: relative;
+//    margin-top: 20px;
+//  }
 
- .subtitle{
-  display: block;
-  margin: 10px 0 0 25PX;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 13px;
-  color: #F3F3F3;
-  width: 260px;
- }
+//  .subtitle{
+//   display: block;
+//   margin: 10px 0 0 25PX;
+//   font-family: 'Open Sans', sans-serif;
+//   font-weight: 400;
+//   font-size: 13px;
+//   color: #F3F3F3;
+//   width: 260px;
+//  }
 
- .input_email, .input_message{
-   margin: 0 0 15px 0;
-   padding: 0 0 0 25px;
-   font-family: 'Open Sans', sans-serif;
-   font-weight: 400;
-   font-size: 17px;
-   height: 56px;
-   width: 310px;
-   border-radius: 28px;
-   border: none;
-   outline: none;
-   text-decoration: none;
-   background-color: #F3F3F3;
- }
+//  .input_email, .input_message{
+//    margin: 0 0 15px 0;
+//    padding: 0 0 0 25px;
+//    font-family: 'Open Sans', sans-serif;
+//    font-weight: 400;
+//    font-size: 17px;
+//    height: 56px;
+//    width: 310px;
+//    border-radius: 28px;
+//    border: none;
+//    outline: none;
+//    text-decoration: none;
+//    background-color: #F3F3F3;
+//  }
 
- .input_text{
-   margin: 0 0 40px 0;
-   padding: 15px 25px 0 25px;
-   font-family: 'Open Sans', sans-serif;
-   font-weight: 400;
-   font-size: 17px;
-   height: 168px;
-   width: 310px;
-   border-radius: 28px;
-   outline: none;
-   resize: none;
-   border: none;
-   background-color: #F3F3F3;
-  }
+//  .input_text{
+//    margin: 0 0 40px 0;
+//    padding: 15px 25px 0 25px;
+//    font-family: 'Open Sans', sans-serif;
+//    font-weight: 400;
+//    font-size: 17px;
+//    height: 168px;
+//    width: 310px;
+//    border-radius: 28px;
+//    outline: none;
+//    resize: none;
+//    border: none;
+//    background-color: #F3F3F3;
+//   }
 
-  .button {
-    position: absolute;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 13pt;
-    text-decoration: none;
-    padding: 7px 12px;
-    background: none;
-    border: 2px solid #F2490C;
-    border-radius: 27px;
-    height: 54px;
-    width: 200px;
-    top: 470px;
-    right: 0px;
-    cursor: pointer;
-    outline:none;
-    color: #F3F3F3;
-    
- }
+//   .button {
+//     position: absolute;
+//     font-family: 'Open Sans', sans-serif;
+//     font-weight: 700;
+//     font-size: 13pt;
+//     text-decoration: none;
+//     padding: 7px 12px;
+//     background: none;
+//     border: 2px solid #F2490C;
+//     border-radius: 27px;
+//     height: 54px;
+//     width: 200px;
+//     top: 470px;
+//     right: 0px;
+//     cursor: pointer;
+//     outline:none;
+//     color: #F3F3F3;
+//  }
 
  .social_media_box{
   position: absolute;
-  top: 660px;
+  top: 146px;
   left: 0px;
-  // border-left: 2px solid #F3F3F3;
-
   width: 340px;
   height: 260px;
-  // background-color: blue;
 }
 
 .social_media_facebook, .social_media_instagram{
@@ -104,7 +99,18 @@
   font-size: 41px;
   color: #F3F3F3;
   width: 200px;
-  // border: 2px solid red;
+}
+
+.social_media_email{
+  position: relative;
+  display: block;
+  margin: 0px 0 0 25px;
+  padding: 0 0 50px 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  color: #F3F3F3;
+  width: 310px;
 }
 
 .social_media_facebook::before{
@@ -125,27 +131,30 @@
   left: -80px;
 }
 
-.link{
-  
-  text-decoration: none;
+// .social_media_email::before{
+//   content: url("./../../assets/img/email_icon.png");
+//   position: absolute;
+//     width: auto;
+//   height: auto;
+//   top: 0px;
+//   left: -80px;
+// }
 
+.link{
+  text-decoration: none;
   background: none;
- 
   cursor: pointer;
   outline:none;
 }
 
 
  @media (min-width: 1360px) {
-
   .wrapper{
     position: relative;
     height: 800px;
     width: 100%;
     background-color: #0E1626;
-
     padding: 30px 102px;
-    // background-color: blue;
   }
 
   .title{
@@ -156,96 +165,91 @@
     font-size: 41px;
     color: #F3F3F3;
     width: 200px;
-    // background-color: red;
   }
 
-  .content{
-    position: relative;
-    margin-top: 40px;
-    width: 600px;
-    // background-color: red;
-  }
+  // .content{
+  //   position: relative;
+  //   margin-top: 40px;
+  //   width: 600px;
+  //   // background-color: red;
+  // }
 
-  .subtitle{
-    display: block;
-    margin: 10px 0 0 25PX;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    color: #F3F3F3;
-    width: 260px;
-   }
+  // .subtitle{
+  //   display: block;
+  //   margin: 10px 0 0 25PX;
+  //   font-family: 'Open Sans', sans-serif;
+  //   font-weight: 400;
+  //   font-size: 15px;
+  //   color: #F3F3F3;
+  //   width: 260px;
+  //  }
 
-   .input_email, .input_message{
-    margin: 0 0 15px 0;
-    padding: 0 0 0 25px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-    height: 56px;
-    width: 600px;
-    border-radius: 28px;
-    border: none;
-    outline: none;
-    text-decoration: none;
-    background-color: #F3F3F3;
-  }
+  //  .input_email, .input_message{
+  //   margin: 0 0 15px 0;
+  //   padding: 0 0 0 25px;
+  //   font-family: 'Open Sans', sans-serif;
+  //   font-weight: 400;
+  //   font-size: 17px;
+  //   height: 56px;
+  //   width: 600px;
+  //   border-radius: 28px;
+  //   border: none;
+  //   outline: none;
+  //   text-decoration: none;
+  //   background-color: #F3F3F3;
+  // }
  
-  .input_text{
-    margin: 0 0 40px 0;
-    padding: 15px 25px 0 25px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-    height: 168px;
-    width: 600px;
-    border-radius: 28px;
-    outline: none;
-    resize: none;
-    border: none;
-    background-color: #F3F3F3;
-   }
+  // .input_text{
+  //   margin: 0 0 40px 0;
+  //   padding: 15px 25px 0 25px;
+  //   font-family: 'Open Sans', sans-serif;
+  //   font-weight: 400;
+  //   font-size: 17px;
+  //   height: 168px;
+  //   width: 600px;
+  //   border-radius: 28px;
+  //   outline: none;
+  //   resize: none;
+  //   border: none;
+  //   background-color: #F3F3F3;
+  //  }
  
-   .button {
-     position: absolute;
-     font-family: 'Open Sans', sans-serif;
-     font-weight: 700;
-     font-size: 13pt;
-     text-decoration: none;
-     padding: 7px 12px;
-     background: none;
+  //  .button {
+  //    position: absolute;
+  //    font-family: 'Open Sans', sans-serif;
+  //    font-weight: 700;
+  //    font-size: 13pt;
+  //    text-decoration: none;
+  //    padding: 7px 12px;
+  //    background: none;
  
-     border-radius: 27px;
-     height: 54px;
-     width: 200px;
-     top: 490px;
-     right: 0px;
-     cursor: pointer;
-     outline:none;
-     color: #F3F3F3;
-  }
+  //    border-radius: 27px;
+  //    height: 54px;
+  //    width: 200px;
+  //    top: 490px;
+  //    right: 0px;
+  //    cursor: pointer;
+  //    outline:none;
+  //    color: #F3F3F3;
+  // }
 
   .social_media_box{
     position: absolute;
-    top: 400px;
-    left: 860px;
-    // border-left: 2px solid #F3F3F3;
-
-    width: 400px;
-    height: 200px;
-    // background-color: red;
+    top: 220px;
+    left: 200px;
+    width: 600px;
+    height: 400px;
   }
 
   .social_media_facebook, .social_media_instagram{
     position: relative;
     display: block;
-    margin: 26px 0 0 110px;
+    margin: 60px 0 0 110px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 41px;
     color: #F3F3F3;
     width: 200px;
-    // border: 2px solid red;
   }
 
   .social_media_facebook::before{
@@ -266,6 +270,27 @@
     left: -80px;
   }
 
+
+  .social_media_email{
+    position: relative;
+    display: block;
+    margin: 0px 0 0 110px;
+    padding: 0 0 50px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 31px;
+    color: #F3F3F3;
+    width: 310px;
+  }
+
+  .social_media_email::before{
+  content: url("./../../assets/img/email_icon_3.png");
+  position: absolute;
+    width: auto;
+  height: auto;
+  top: -5px;
+  left: -80px;
+}
 
 
 
@@ -288,12 +313,10 @@
 
   .wrapper{
     position: relative;
-    height: 1080px;
+    height: 800px;
     width: 100%;
     background-color: #0E1626;
-
     padding: 90px 200px;
-    // background-color: blue;
   }
 
   .title{
@@ -304,72 +327,15 @@
     font-size: 41px;
     color: #F3F3F3;
     width: 200px;
-    // background-color: red;
   }
 
-  .content{
-    position: relative;
-    margin-top: 60px;
-    width: 800px;
-    // background-color: red;
-  }
-
-  .subtitle{
-    display: block;
-    margin: 40px 0 0 25PX;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    color: #F3F3F3;
-    width: 260px;
-   }
-
-   .input_email, .input_message{
-    margin: 0 0 15px 0;
-    padding: 0 0 0 25px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-    height: 56px;
-    width: 800px;
-    border-radius: 28px;
-    border: none;
-    outline: none;
-    text-decoration: none;
-    background-color: #F3F3F3;
-  }
- 
-  .input_text{
-    margin: 0 0 40px 0;
-    padding: 15px 25px 0 25px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-    height: 168px;
-    width: 800px;
-    border-radius: 28px;
-    outline: none;
-    resize: none;
-    border: none;
-    background-color: #F3F3F3;
-   }
-
-   .button {
-    top: 580px;
-    right: 0px;
- }
- 
-   .social_media_box{
+  .social_media_box{
     position: absolute;
-    top: 526px;
-    left: 1260px;
-    // border-left: 2px solid #F3F3F3;
-
-    width: 400px;
-    height: 200px;
-    // background-color: red;
+    top: 260px;
+    left: 340px;
+    width: 600px;
+    height: 400px;
   }
-
  }
 
 
